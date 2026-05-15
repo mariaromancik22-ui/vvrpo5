@@ -1,0 +1,29 @@
+E:\лабы второй семестр\вврпо 5\вврпо 5\obj\Debug\вврпо 5.csproj.AssemblyReference.cache
+E:\лабы второй семестр\вврпо 5\вврпо 5\obj\Debug\вврпо_5.Form1.resources
+E:\лабы второй семестр\вврпо 5\вврпо 5\obj\Debug\вврпо_5.Properties.Resources.resources
+E:\лабы второй семестр\вврпо 5\вврпо 5\obj\Debug\вврпо 5.csproj.GenerateResource.cache
+E:\лабы второй семестр\вврпо 5\вврпо 5\obj\Debug\вврпо 5.csproj.CoreCompileInputs.cache
+E:\лабы второй семестр\вврпо 5\вврпо 5\bin\Debug\вврпо 5.exe.config
+E:\лабы второй семестр\вврпо 5\вврпо 5\bin\Debug\вврпо 5.exe
+E:\лабы второй семестр\вврпо 5\вврпо 5\bin\Debug\вврпо 5.pdb
+E:\лабы второй семестр\вврпо 5\вврпо 5\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+E:\лабы второй семестр\вврпо 5\вврпо 5\bin\Debug\System.Buffers.dll
+E:\лабы второй семестр\вврпо 5\вврпо 5\bin\Debug\System.IO.Pipelines.dll
+E:\лабы второй семестр\вврпо 5\вврпо 5\bin\Debug\System.Memory.dll
+E:\лабы второй семестр\вврпо 5\вврпо 5\bin\Debug\System.Numerics.Vectors.dll
+E:\лабы второй семестр\вврпо 5\вврпо 5\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\лабы второй семестр\вврпо 5\вврпо 5\bin\Debug\System.Text.Encodings.Web.dll
+E:\лабы второй семестр\вврпо 5\вврпо 5\bin\Debug\System.Text.Json.dll
+E:\лабы второй семестр\вврпо 5\вврпо 5\bin\Debug\System.Threading.Tasks.Extensions.dll
+E:\лабы второй семестр\вврпо 5\вврпо 5\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+E:\лабы второй семестр\вврпо 5\вврпо 5\bin\Debug\System.Buffers.xml
+E:\лабы второй семестр\вврпо 5\вврпо 5\bin\Debug\System.IO.Pipelines.xml
+E:\лабы второй семестр\вврпо 5\вврпо 5\bin\Debug\System.Memory.xml
+E:\лабы второй семестр\вврпо 5\вврпо 5\bin\Debug\System.Numerics.Vectors.xml
+E:\лабы второй семестр\вврпо 5\вврпо 5\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\лабы второй семестр\вврпо 5\вврпо 5\bin\Debug\System.Text.Encodings.Web.xml
+E:\лабы второй семестр\вврпо 5\вврпо 5\bin\Debug\System.Text.Json.xml
+E:\лабы второй семестр\вврпо 5\вврпо 5\bin\Debug\System.Threading.Tasks.Extensions.xml
+E:\лабы второй семестр\вврпо 5\вврпо 5\obj\Debug\вврпо 5.csproj.Up2Date
+E:\лабы второй семестр\вврпо 5\вврпо 5\obj\Debug\вврпо 5.exe
+E:\лабы второй семестр\вврпо 5\вврпо 5\obj\Debug\вврпо 5.pdb
