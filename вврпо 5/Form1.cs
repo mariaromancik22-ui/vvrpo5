@@ -5,19 +5,20 @@ using System.Text.Json;
 using System.Windows.Forms;
 using System.Threading.Tasks;
 
-namespace вврпо_5
+namespace вврпо_5   // замените на своё пространство имён
 {
     public partial class Form1 : Form
     {
-        // 0-пусто, 1-игрок X, 2-компьютер O
+        // Игровое поле (0-пусто, 1-игрок X, 2-компьютер O)
         private int[] board = new int[9];
         private Button[] cellButtons = new Button[9];
         private Random random = new Random();
 
-        private bool isPlayerTurn;   
-        private bool gameActive;      
-        private bool gameOver;       
-        private bool nextFirstPlayer; 
+        // Флаги состояния
+        private bool isPlayerTurn;    // true - игрок, false - компьютер
+        private bool gameActive;      // игра активна (идёт)
+        private bool gameOver;        // партия окончена
+        private bool nextFirstPlayer; // кто начнёт следующую игру: true-игрок, false-компьютер
 
         public Form1()
         {
@@ -25,13 +26,12 @@ namespace вврпо_5
             InitializeCustom();
             InitializeGameState();
 
+            // Настройка видимости кнопок
+            exitButton.Visible = true;
+            exitButton.Enabled = true;
+            newGameButton.Visible = false;  // сначала скрыта
             startButton.Visible = true;
             startButton.Enabled = true;
-            newGameButton.Visible = false;
-            saveButton.Visible = false;
-            loadButton.Visible = false;
-            exitButton.Visible = true;   
-            exitButton.Enabled = true;
         }
 
         private void InitializeGameState()
@@ -64,16 +64,15 @@ namespace вврпо_5
             gameOver = false;
             isPlayerTurn = nextFirstPlayer;
             SetButtonsEnabled(true);
-            startButton.Visible = false;
-            newGameButton.Visible = true;
-            saveButton.Visible = true;
-            loadButton.Visible = true;
+            startButton.Visible = false;   // скрываем после первого старта
+            newGameButton.Visible = true;  // показываем кнопку "Новая игра"
             statusLabel.Text = isPlayerTurn ? "Ваш ход (X)" : "Ход компьютера (O)...";
             if (!isPlayerTurn) ComputerMove();
         }
 
         private void NewGameButton_Click(object sender, EventArgs e)
         {
+            // Сразу начинаем новую игру
             ResetBoard();
             gameActive = true;
             gameOver = false;
@@ -112,7 +111,7 @@ namespace вврпо_5
 
             if (!gameActive || gameOver || isPlayerTurn) return;
 
-            // сбор свободных клеток
+            // Сбор свободных клеток
             var freeIndices = new System.Collections.Generic.List<int>();
             for (int i = 0; i < 9; i++) if (board[i] == 0) freeIndices.Add(i);
 
@@ -174,19 +173,19 @@ namespace вврпо_5
             if (winner == "Player")
             {
                 statusLabel.Text = "Игрок победил!";
-                nextFirstPlayer = false;
+                nextFirstPlayer = false; // компьютер начинает следующую
             }
             else if (winner == "Computer")
             {
                 statusLabel.Text = "Компьютер победил!";
-                nextFirstPlayer = true;  
+                nextFirstPlayer = true;  // игрок начинает следующую
             }
             else
             {
                 statusLabel.Text = "Ничья!";
-               
+                // nextFirstPlayer не меняется
             }
-            
+            // Кнопка "Начать игру" уже скрыта, "Новая игра" видна, "Выход" виден всегда
         }
 
         private void SaveButton_Click(object sender, EventArgs e) => SaveGame();
@@ -256,6 +255,7 @@ namespace вврпо_5
                     statusLabel.Text = data.GameOverMessage ?? "Игра окончена";
                     startButton.Visible = false;
                     newGameButton.Visible = true;
+                    // exitButton.Visible оставляем как есть (true)
                 }
                 else
                 {
@@ -273,10 +273,12 @@ namespace вврпо_5
             }
         }
 
+        // Этот метод должен быть реализован, если вы используете TableLayoutPanel для поиска кнопок
         private void InitializeCustom()
         {
+            // Если вы используете способ поиска кнопок через TableLayoutPanel:
             int index = 0;
-            foreach (Control ctrl in gameTable.Controls)
+            foreach (Control ctrl in gameTable.Controls) // замените на реальное имя таблицы
             {
                 if (ctrl is Button btn)
                 {
@@ -284,8 +286,11 @@ namespace вврпо_5
                     btn.Click += CellClick;
                 }
             }
-            
+            // Если вы переименовали кнопки как button00...button22, то можно и так:
+            // cellButtons[0] = button00;
+            // ... и так далее, но тогда нужно заполнить все 9.
 
+            // Подписка на события кнопок управления
             startButton.Click += StartButton_Click;
             saveButton.Click += SaveButton_Click;
             loadButton.Click += LoadButton_Click;
