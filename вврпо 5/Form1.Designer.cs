@@ -173,36 +173,36 @@
             // 
             // startButton
             // 
-            this.startButton.Location = new System.Drawing.Point(141, 356);
+            this.startButton.Location = new System.Drawing.Point(141, 371);
             this.startButton.Name = "startButton";
-            this.startButton.Size = new System.Drawing.Size(94, 46);
+            this.startButton.Size = new System.Drawing.Size(93, 46);
             this.startButton.TabIndex = 2;
             this.startButton.Text = "Начать игру";
             this.startButton.UseVisualStyleBackColor = true;
             // 
             // saveButton
             // 
-            this.saveButton.Location = new System.Drawing.Point(76, 408);
+            this.saveButton.Location = new System.Drawing.Point(141, 437);
             this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(94, 46);
+            this.saveButton.Size = new System.Drawing.Size(93, 46);
             this.saveButton.TabIndex = 3;
             this.saveButton.Text = "Сохранить игру";
             this.saveButton.UseVisualStyleBackColor = true;
             // 
             // loadButton
             // 
-            this.loadButton.Location = new System.Drawing.Point(204, 408);
+            this.loadButton.Location = new System.Drawing.Point(240, 437);
             this.loadButton.Name = "loadButton";
-            this.loadButton.Size = new System.Drawing.Size(94, 46);
+            this.loadButton.Size = new System.Drawing.Size(93, 46);
             this.loadButton.TabIndex = 4;
             this.loadButton.Text = "Загрузить игру";
             this.loadButton.UseVisualStyleBackColor = true;
             // 
             // newGameButton
             // 
-            this.newGameButton.Location = new System.Drawing.Point(76, 474);
+            this.newGameButton.Location = new System.Drawing.Point(42, 437);
             this.newGameButton.Name = "newGameButton";
-            this.newGameButton.Size = new System.Drawing.Size(94, 46);
+            this.newGameButton.Size = new System.Drawing.Size(93, 46);
             this.newGameButton.TabIndex = 5;
             this.newGameButton.Text = "Новая игра";
             this.newGameButton.UseVisualStyleBackColor = true;
@@ -210,9 +210,9 @@
             // 
             // exitButton
             // 
-            this.exitButton.Location = new System.Drawing.Point(204, 474);
+            this.exitButton.Location = new System.Drawing.Point(141, 505);
             this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(94, 46);
+            this.exitButton.Size = new System.Drawing.Size(93, 46);
             this.exitButton.TabIndex = 6;
             this.exitButton.Text = "Выйти";
             this.exitButton.UseVisualStyleBackColor = true;
@@ -221,7 +221,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Thistle;
+            this.BackColor = System.Drawing.Color.PaleTurquoise;
             this.ClientSize = new System.Drawing.Size(382, 655);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.newGameButton);
